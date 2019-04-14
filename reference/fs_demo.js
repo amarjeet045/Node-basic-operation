@@ -1,3 +1,4 @@
+//https://github.com/amarjeet045/Node-basic-operation.git
 const fs = require('fs');
 const path = require ('path');
 
@@ -31,7 +32,7 @@ fs.writeFile(path.join(__dirname, '/tests','hello.text'),'Hello world',err=>{
 */
 
 //Read file
-fs.readFile(path.join(__dirname, '/test','hello.text'),'utf8',(err,data) =>{
+fs.readFile(path.join(__dirname, '/tests','hello.text'),'utf8',(err,data) =>{
     if(err) throw err;
     console.log(data);
 });
